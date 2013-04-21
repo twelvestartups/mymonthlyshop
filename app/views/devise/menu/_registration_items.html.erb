@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+  <div class="left ml">  
+  	<%= link_to('Edit registration', edit_user_registration_path) %>
+  | </div>
+<% else %>
+  <div class="left ml"> 
+  	<%= link_to('Register', new_user_registration_path)  %>
+  | </div>
+<% end %>

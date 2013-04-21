@@ -38,7 +38,8 @@
 	<div style="background:#1a2129; border-bottom: 1px solid #fff;">
 		<div class="row">
 			<div class="large-12 columns">
-				<%= render "nav" %>
+				<%= render "pages/nav" %>
+
 			</div>
 		</div>
 	</div>
@@ -52,9 +53,11 @@
 		    <% end %>
 	</div>
 	
+	<div>
     <%= yield %>
-	
-	<%= render "footer" %>
+	</div
+	>
+	<%= render "pages/footer" %>
 	
     <%= javascript_include_tag "application" %>
   </body>
