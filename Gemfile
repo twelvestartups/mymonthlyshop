@@ -24,9 +24,10 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   
-  #Foundation 4
-  gem 'zurb-foundation', '~> 4.0.0'
 end
+
+#Foundation 4
+gem 'zurb-foundation', '~> 4.0.0'
 
 gem 'jquery-rails'
 
