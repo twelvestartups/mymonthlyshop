@@ -1,0 +1,108 @@
+	<div style="background:#c8d2d5; padding:20px 0px 40px 0px; color: #012;">
+		<div class="row">			    
+			<div class="large-12 small-12"><p></p></div>
+				<div class="large-8 medium-12 columns">
+					<iframe src="http://player.vimeo.com/video/64392584" width="100%" height="358" class="flex" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>		
+				<div class="large-4 small-12 columns content">
+						<h1>You're a Bloke</h1>
+						<h3 class="subheader">Stop shopping for the same stuff every month</h3>
+						<h4 class="">Choose it once</h4>
+						<h4 class="">Forget about it forever</h4>
+						<p></p>
+						<form method="get" action="signup.php">
+							<button class="button">SIGN UP NOW<ul style="display:inline; position: relative; top: 4px; left: 5px;"><i class="foundicon-right-arrow f5"></i></ul></button>
+						</form>
+						<%= image_tag 'bloke.png', :class => 'hide-for-medium-down', :style => 'display: inline; margin-top: -350px; position: relative; left: 205px; bottom: -40px;' %>
+						
+			</div><!-- "You're a bloke" text -->
+		</div>
+    </div><!--Hero area-->
+    
+    	<div style="height: 10px;"><!--spacer--></div>
+    		
+		<div class="row">			    
+			<div class="large-12 small-12 text-center"> 
+				<%= image_tag 'brandsbw.png', :alt=>'brands', :style=>'width: 75%;' %>
+			</div>
+		</div>
+
+    
+	<!--div class="row hide-for-small" style="margin-top: 50px; color: #012;">
+		<div>
+			<div class="large-4 columns text-center" style="font-size:30px;">
+				<ul><i class="foundicon-refresh f5"> ESSENTIALS</i></ul>
+			</div>										
+			<div class="large-4 columns text-center" style="font-size:30px;">
+				<ul><i class="foundicon-cart f5"> DELIVERED</i></ul>
+			</div>							
+			<div class="large-4 columns text-center" style="font-size:30px;">
+				<ul><i class="foundicon-calendar f5"> MONTHLY</i></ul>
+			</div>				
+		</div>
+	</div--><!-- icons -->
+	
+		<div style="height: 20px;"><!--spacer--></div>
+	
+	
+	<div class="row" >		
+		<div class="large-6 columns">
+			<div style="width: 100%; height: 250px; overflow: hidden; border: 8px solid #888; margin-bottom: 0px;">
+				<div style="-webkit-transform: rotate(4deg); width: 700px;">
+					<%= image_tag 'ss.png', :alt=>'ss', :style=>'width: 800px;' %>
+				</div>
+			</div>
+		</div>
+		<div class="large-6 columns">
+			<div class="hide-for-small" style="height: 30px;"></div>
+			<h3 class="">You've got better stuff to do</h3>
+			<p class="subheader">When you add something to your monthly shop, it's as easy as sliding a switch. There's no cart, no checkout, no "please wait" or "print this page", it's just added to your next delivery.</p>
+			<p class="subheader">Less shopping, more <strike>time with your other half</strike> pub.</p>
+			<p><a href="features.php">Show me more features</a></p>
+			
+		</div>
+	</div>
+	
+
+	<div style="height: 70px;"></div>
+    	     
+   	<div class="row">			
+		<div class="large-6 columns">
+				<div class="large-3 small-3 columns">
+					<ul><i class="foundicon-cart text-center" style="font-size: 70px; color:#345;"></i></ul>
+				</div>
+				<div class="large-9 small-9 columns">
+			        <h5>Shop like a guy</h5>
+					<p class="subheader">Choose from highly descriptive product titles. How about the "I don't care which shampoo as long as it's under a quid" product or "Any shaving gel that has the word 'glide' and costs under 2 quid". Just leave the rest to us.</p>
+				</div>
+			</div><!-- Shop smarter -->	
+		<div class="large-6 columns">
+			<div class="large-3 small-3 columns">
+				<ul><i class="foundicon-mail text-center" style="font-size: 70px; color:#345;"></i></ul>
+			</div>			
+			<div class="large-9 small-9 columns">
+		        <h5>We'll check you want it</h5>
+				<h6 class="subheader">We'll email you each month before we
+				send your stuff, just to remind you, and you can remove
+				stuff with a click if you want - or just forget about it
+				and let the good times roll.</h6>	
+			</div>			
+		</div>			               
+	</div><!-- Guys Shop Differently -->
+	
+		<div style="height: 60px;"></div>
+
+
+		<!--div class="row" >		
+			<div class="large-6 columns">
+				<h3>Brands you love</h3>
+				<p class="subheader">We stock all your favourite brands but if there's ever something we don't see, let us know and we'll try and add it for future selection.</p>
+			</div>
+			<div class="large-6 columns">
+				<div style="height: 20px;"></div>
+				<img src="media/brands.png" alt="brands" width="" height="" />
+			</div>
+		</div-->	
+
+
+		<%= render "signup-start" %>
