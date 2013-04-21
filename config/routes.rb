@@ -1,5 +1,7 @@
 Mymonthlyshop::Application.routes.draw do
   
+  devise_for :users
+
   match '/home' => 'pages#home'
   match '/account' => 'pages#account'
   match '/contact' => 'pages#contact'
