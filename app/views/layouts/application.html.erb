@@ -42,21 +42,18 @@
 
 			</div>
 		</div>
-	</div>
-	
-	<div>
-		<% if flash[:notice] %>
+		
+			<% if flash[:notice] %>
 		      <p class="notice"><%= flash[:notice] %></p>
 		    <% end %>
 		    <% if flash[:error] %>
 		      <p class="error"><%= flash[:error] %></p>
 		    <% end %>
+		
 	</div>
-	
-	<div>
+		
     <%= yield %>
-	</div
-	>
+	
 	<%= render "pages/footer" %>
 	
     <%= javascript_include_tag "application" %>
