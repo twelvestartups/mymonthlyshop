@@ -1,19 +1,75 @@
 <div class="row">
-	<h2>Sign in</h2>
+	
+		<div data-alert class="alert-box success text-center">
+			<%= devise_error_messages! %>    
+		</div>
+	
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+	<div class="large-6 columns push-3">		
+		<div class="section-container tabs" data-section>
+			<section class="section">
+			<h5 class="title"><a href="#panel1">Login</a></h5>
+				<div class="content" data-slug="panel1">
+					<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+						<div class="row collapse">
+							<div class="large-2 columns">
+								<%= f.label :email, :class => 'inline'  %>
+							</div>
+							<div class="large-10 columns">
+								<%= f.email_field :email %>
+							</div>
+						</div>
+						
+						<div class="row collapse">
+							<div class="large-2 columns">
+								<%= f.label :password, :class => 'inline'  %>
+							</div>
+							<div class="large-10 columns">
+								<%= f.password_field :password %>
+							</div>
+						</div>
+						
+						<div class="row collapse">
+							<div class="large-2 columns push-2">
+								
+								  <% if devise_mapping.rememberable? -%>
+								    <%= f.check_box :remember_me %> <%= f.label :remember_me %>
+								  <% end %>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+								  <%= f.submit "Login", :class => 'button large' %>
+							</div>
+						</div>
+						
+						<% end %>
+				</div>
+			</section>	
+			<section class="section">
+			<h5 class="title"><a href="#panel1">Forgot Password</a></h5>
+				<div class="content" data-slug="panel1">
+					<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
+						<div class="row collapse">
+							<div class="large-2 columns">
+								<%= f.label :email, :class=>'inline' %>
+							</div>
+							<div class="large-6 pull-4 columns">
+								<%= f.email_field :email, :id=>"yourName" %>
+								<p>An email with instructions will be sent to your address</p>
+							</div>
+						</div>
+												
+						<div class="row collapse">
+							<div class="large-2 columns push-2">
+								<%= f.submit "Reset", :class => 'button large' %>
+							</div>
+						</div>
+						
+						<% end %>
+				</div>
+			</section>	
 
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
+		</div>
+	</div>
 
-<%= render "devise/shared/links" %>
+
 </div>

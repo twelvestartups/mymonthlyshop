@@ -1,5 +1,7 @@
 Mymonthlyshop::Application.routes.draw do
   
+  resources :products
+
   devise_for :users
 
   match '/home' => 'pages#home'
