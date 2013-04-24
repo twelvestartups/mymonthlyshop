@@ -10,10 +10,11 @@
 						<h4 class="">Choose it once</h4>
 						<h4 class="">Forget about it forever</h4>
 						<p></p>
+						<%= link_to products_path, :style => "color:white;", :class => "button large" do %>
+						  Try it now!
+						  <ul style="display:inline; position: relative; top: 4px; left: 5px;"><i class="foundicon-right-arrow f5"></i></ul>
+						<% end %>
 						
-						<%= button_to "Try it now!", products_path, :class => 'button large', :method => :get %>
-						<ul style="display:inline; position: relative; top: 4px; left: 5px;"><i class="foundicon-right-arrow f5"></i></ul></button>
-						</form>
 						<%= image_tag 'bloke.png', :class => 'hide-for-medium-down', :style => 'display: inline; margin-top: -350px; position: relative; left: 205px; bottom: -40px;' %>
 						
 			</div><!-- "You're a bloke" text -->
