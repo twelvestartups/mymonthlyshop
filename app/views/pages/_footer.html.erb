@@ -4,19 +4,19 @@
         <hr>
 
         <div class="row">
-            <div class="large-4 hide-for-small columns">
+            <div class="large-3 hide-for-small columns">
                 <p>©2013 MyMonthlyShop</p>
             </div>
 
-            <div class="large-8 small-12 columns">           
-                <ul class="inline-list right">     
-	                <li><i class="foundicon-idea"> A 12 Startups Initiative</i></li>                       
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/faqs">FAQs</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Privacy & Terms</a></li>
-                </ul>
+            <div class="large-9 small-12 columns">           
+                    
+	                	<div class="left ml"><i class="foundicon-idea"> A 12 Startups Initiative</i> | </div>
+	<div class="left ml"><a href="/">Home</a> | </div>      
+	<div class="left ml"><a href="/faqs">FAQs</a> | </div>      
+	<div class="left ml"><a href="#">Privacy & Terms</a></div>
+	<%= render 'devise/menu/login_items' %>        
+	<%= render 'devise/menu/registration_items' %>         
+                   
             </div>
         </div>
     </div>
