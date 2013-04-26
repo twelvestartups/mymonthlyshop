@@ -1,4 +1,7 @@
 	<div style="background:#c8d2d5; padding:20px 0px 40px 0px; color: #012;">
+		<%= image_tag 'bloke3.png', :class => 'hide-for-medium-down', :style => 'display: inline; margin-top: -427px; position: relative; left: 78%; bottom: -437px; height: 414px;' %>
+		
+		
 		<div class="row">			    
 			<div class="large-12 small-12"><p></p></div>
 				<div class="large-8 medium-12 columns">
@@ -13,8 +16,6 @@
 
 <button data-reveal-id="myModal" class="button large content" onClick="_gaq.push(['_trackEvent', 'Signups', 'tryitnow']);"> Try it now! <ul style="display:inline; position: relative; top: 4px; left: 5px;"><i class="foundicon-right-arrow f5"></i></ul></button>
 
-						
-						<%= image_tag 'bloke.png', :class => 'hide-for-medium-down', :style => 'display: inline; margin-top: -350px; position: relative; left: 205px; bottom: -40px;' %>
 						
 			</div><!-- "You're a bloke" text -->
 		</div>
@@ -91,7 +92,6 @@
 		</div>			               
 	</div><!-- Guys Shop Differently -->
 	
-		<div style="height: 60px;"></div>
 
 
 		<!--div class="row" >		
@@ -105,6 +105,6 @@
 			</div>
 		</div-->	
 
+		<%= render "modal" %>
 
 		<%= render "signup-start" %>
-		<%= render "modal" %>
