@@ -4,7 +4,9 @@
 	<div class="large-6 columns right">
 		<div style="height: 60px;"></div>
 		<h3>We call it "The Switch"</h3>
-		<p class="subheader">When you want to add something to your monthly shop, it's as easy as sliding a switch. There's no cart, no checkout, no "please wait" or "print this page", it's just added to your next delivery.			
+		<p class="subheader">When you want to add something to your monthly shop, it's as easy as sliding a switch. There's no cart, no checkout, no "please wait" or "print this page", it's just added to your next delivery.
+		<div style="height: 20px;"></div>			
+		<button data-reveal-id="myModal" class="button small content"> Try the demo <ul style="display:inline; position: relative; top: 4px; left: 5px;"><i class="foundicon-right-arrow f5"></i></ul></button>
 	</div>
 	<div class="large-6 columns">
 		<div style="width: 100%; height: 250px; overflow: hidden; border: 8px solid #888; margin-bottom: 0px;">
@@ -12,6 +14,7 @@
 				<%= image_tag 'the-switch.png', :alt=>'ss', :style=>'width: 900px;' %>
 			</div>
 		</div>
+
 	</div>
 	
 </div>
@@ -64,3 +67,4 @@
 </div>	
 		
 <div style="height: 100px;"></div>
+				<%= render "modal" %>
