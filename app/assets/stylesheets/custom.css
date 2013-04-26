@@ -54,3 +54,12 @@ img.border {
 }
 
 .h300 {height:300px;}
+
+.footerlinks a {
+	color:black;
+	
+}
+.footerlinks a:hover {
+	color:navy;
+	
+}
