@@ -53,7 +53,7 @@ img.border {
 	margin-top: 20px;
 }
 
-.h300 {height:300px;}
+.h300 {width: 100%; max-height: 300px;}
 
 .footerlinks a {
 	color:black;
