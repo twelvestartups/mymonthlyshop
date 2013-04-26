@@ -3,9 +3,52 @@
 	<div style="height: 60px;" class="hide-for-small"></div>
 	<div class="large-8 columns push-2 left panel">
 		<h3 class="subheader text-center">Apply for an invitation</h3>
-		<p class="subheader text-center">Already got one? <%= link_to "Login Here", new_session_path(resource_name) %></p>
+		<p class="subheader text-center">We're not open to the general pubic just yet but we'll be sending out invitations really soon. Leave your email for an invitation as soon as they become available</p>
 		
-		<%= render "pages/signup-start" %>
+		<div style="height: 30px;"></div>
+
+        <form action="http://mymonthlyshop.createsend.com/t/t/s/fjhjl/" method="post" id="subForm">
+            <div class="row">
+                <div class="large-4 push-3 columns">
+
+                    <input type="text" class="inline required email" placeholder="name@example.com" name="cm-fjhjl-fjhjl" id="fjhjl-fjhjl" />
+
+                </div>
+                <div class="large-5 columns">
+                    <button class="button small" type="submit" onClick="_gaq.push(['_trackEvent', 'Signups', 'tellmefirst']);">Apply Now</button>
+                </div>
+            </div>
+        </form>
+        
+        		<p class="subheader text-center">Already got an invitation? <%= link_to "Login Here", new_session_path(resource_name) %></p>
+
+		
+				
+				
+				<script type="text/javascript">
+					
+					function IsEmail(email) {
+					  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+					  return regex.test(email);
+					}
+					
+					$(document).ready(function () {
+					
+							var email = $("#cm-fjhjl-fjhj");
+				
+							$('#subForm').on('click', 'button', function(event) {
+				
+								// Validate the e-mail.
+								if (!IsEmail(email.val())) {
+						    		email.addClass("error");
+						    		email.val(emailerror);
+									return false;
+								}
+							});
+				
+						});
+				
+				</script>
 		
 	</div>
 </div>
