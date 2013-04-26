@@ -1,32 +1,11 @@
 <div class="row">
 	
-		<div data-alert class="alert-box success text-center">
-			<%= devise_error_messages! %>    
-		</div>
-
 	<div style="height: 60px;" class="hide-for-small"></div>
 	<div class="large-8 columns push-2 left panel">
 		<h3 class="subheader text-center">Apply for an invitation</h3>
 		<p class="subheader text-center">Already got one? <%= link_to "Login Here", new_session_path(resource_name) %></p>
-		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-		  
-			<div class="large-2 columns"><%= f.label :fullname %></div>
-			<div class="large-10 columns"><%= f.text_field :fullname, :name=>'cm-name',:id=>'name' %></div>
-						
-			<div class="large-2 columns"><%= f.label :email %></div>
-			<div class="large-10 columns"><%= f.email_field :email %></div>
-			
-			<div class="large-2 columns"><%= f.label :telephone %></div>
-			<div class="large-10 columns"><%= f.text_field :telephone %></div>
-			
-			<div class="large-2 columns"><%= f.label :password %></div>
-			<div class="large-10 columns"><%= f.password_field :password %></div>
-
-			<div class="large-2 columns"><%= f.label :password_confirmation %></div>
-			<div class="large-10 columns"><%= f.password_field :password_confirmation %></div>
-			
-			<div class="right"><%= f.submit "Sign up", :class => 'button large' %></div>
-			
-		<% end %>
+		
+		<%= render "pages/signup-start" %>
+		
 	</div>
 </div>
