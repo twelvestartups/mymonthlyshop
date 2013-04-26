@@ -62,3 +62,16 @@ img.border {
 .footerlinks a:hover { 
 	color:navy;	
 }
+
+	.main-hero {
+		background:#c8d2d5; padding:20px 0px 40px 0px; color: #012; 
+		}
+
+@media screen and (min-width: 90em) {
+	.main-hero {
+	    background-image: url(/assets/bloke3.png);
+	    background-size: 300px;
+	    background-repeat: no-repeat;
+	    background-position: 93% 91px;	
+	}
+}
