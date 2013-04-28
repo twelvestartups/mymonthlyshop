@@ -55,6 +55,10 @@ img.border {
 
 .h300 {width: 100%; max-height: 300px;}
 
+.footerlinks a, .footerlinks p {
+	font-size: 0.7em;
+}
+
 .footerlinks a {
 	color:black;
 	

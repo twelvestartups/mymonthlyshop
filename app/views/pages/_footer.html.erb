@@ -5,19 +5,21 @@
 
         <div class="row">
             
-            <div class="large-2 hide-for-small columns">
+            <div class="large-4 hide-for-small columns footerlinks">
                 <p>©2013 MyMonthlyShop</p>
             </div>
 
-            <div class="large-10 small-12 columns footerlinks">                               
-				<div class="left ml">
-					<i class="foundicon-idea"><a href="http://www.12startups.co.uk" target="_blank">A 12 Startups Initiative<a></i>
-				</div>
-				<div class="right ml"><a href="/">Home</a></div>      
-				<div class="right ml"><a href="/faqs">FAQs</a> | </div>      
-				<div class="right ml"><a href="#">Privacy & Terms</a> | </div>
-				<div class="right ml"><%= render 'devise/menu/registration_items' %> | </div> 
-				<div class="right ml"><%= render 'devise/menu/login_items' %></div>      		                          
+        	<div class="large-3 small-12 left ml footerlinks">
+				<a href="http://www.12startups.co.uk" target="_blank"><i class="foundicon-idea">A 12 Startups Initiative</i><a>
+			</div>
+
+            <div class="large-5 small-12 columns footerlinks text-right">                               
+				
+				<div class="left ml"><a href="/">Home</a> | </div>      
+				<div class="left ml"><a href="/faqs">FAQs</a> | </div>      
+				<div class="left ml"><a href="#">Privacy & Terms</a></div>
+				<div class="left ml"><%= render 'devise/menu/registration_items' %> | </div> 
+				<div class="left ml"><%= render 'devise/menu/login_items' %></div>      		                          
             </div>
             
             
